@@ -18,8 +18,9 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider &&  react-scripts build",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start --openssl-legacy-provider",
+    "start": "serve -s build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider &&  react-scripts build --openssl-legacy-provider",
     "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
     "eject": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts eject",
     "lint": "eslint .",
